@@ -55,13 +55,10 @@ def make_multiinput(image_path,image_h,image_w,view_n):
     #    64       67       70 
     # 72          76          80    
     
-    slice_for_5x5= int(0.5*(9-len(view_n)))
     
-    seq90d=list(range(4,81,9)[::-1][slice_for_5x5:9-slice_for_5x5:]) # 90degree:  [76, 67, 58, 49, 40, 31, 22, 13, 4 ]    
-    seq0d=list(range(36,45,1)[slice_for_5x5:9-slice_for_5x5:])        # 0degree:  [36, 37, 38, 39, 40, 41, 42, 43, 44] 
-    seq45d=list(range(8,80,8)[::-1][slice_for_5x5:9-slice_for_5x5:]) # 45degree:  [72, 64, 56, 48, 40, 32, 24, 16, 8 ]
-    seqM45d=list(range(0,81,10)[slice_for_5x5:9-slice_for_5x5:])    # -45degree:  [0, 10, 20, 30, 40, 50, 60, 70, 80] 
-    
+    ###your code here
+ 
+    ###your code here
     if(image_path[:12]=='hci_dataset/'):
         val_90d=make_epiinput(image_path,seq90d,image_h,image_w,view_n,RGB)    
         val_0d=make_epiinput(image_path,seq0d,image_h,image_w,view_n,RGB)
