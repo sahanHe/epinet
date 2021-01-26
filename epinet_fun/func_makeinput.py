@@ -65,7 +65,7 @@ def make_multiinput(image_path,image_h,image_w,view_n):
         val_45d=make_epiinput(image_path,seq45d,image_h,image_w,view_n,RGB)
         val_M45d=make_epiinput(image_path,seqM45d,image_h,image_w,view_n,RGB) 
     
-    elif(image_path[:5]=='lytro'):
+    else:
         val_90d=make_epiinput_lytro(image_path,seq90d,image_h,image_w,view_n,RGB)    
         val_0d=make_epiinput_lytro(image_path,seq0d,image_h,image_w,view_n,RGB)
         val_45d=make_epiinput_lytro(image_path,seq45d,image_h,image_w,view_n,RGB)
